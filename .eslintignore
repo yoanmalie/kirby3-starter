@@ -1,4 +1,10 @@
 # Ignore them all:
 package-lock.json
+composer-lock.json
 /node_modules/*
+/vendor/*
+/storage/*
 /public/*
+/kirby/*
+/site/plugins/*
+/content/*

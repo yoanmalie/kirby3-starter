@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /panel/
+# Sitemap: http://my-website.local/sitemap.xml

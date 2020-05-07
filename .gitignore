@@ -1,5 +1,25 @@
+# Kirby
+public/media/*
+content/*
+kirby/*
+storage/*
+site/plugins/*
+site/config/*
+!site/config/config.php
+!site/config/config.localhost.php
+!site/config/config.example.vhost.php
+
 # Generated assets folder
 public/assets/*
+
+# Vhost configuration used for Browsersync
+.vhost.js
+
+# Backup
+backup/*
+
+# Composer
+vendor/*
 
 # Node JS
 node_modules/*

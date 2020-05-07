@@ -1,3 +1,8 @@
 # Basic
 /node_modules/*
+/vendor/*
+/storage/*
 /public/*
+/kirby/*
+/site/plugins/*
+/content/*

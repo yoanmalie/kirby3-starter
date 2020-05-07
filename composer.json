@@ -1,0 +1,21 @@
+{
+  "name": "yoanmalie/kirby3-starter",
+  "description": "Kirby 3 Starter",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Yoan Malié",
+      "email": "hello@yoan-malie.fr",
+      "homepage": "https://yoan-malie.fr",
+      "role": "developer"
+    }
+  ],
+  "license": "LGPL-3.0",
+  "require": {
+    "getkirby/cms": "^3.0.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
