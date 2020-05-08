@@ -44,7 +44,8 @@ composer install
 -   To make the Kirby configuration available to fit the [multi-environment setup](https://getkirby.com/docs/guide/configuration#multi-environment-setup), just copy the file `/site/config/config.example.vhost.php` and rename it accordingly to your vhost name, like `/site/config/config.my-website.local.php`.
 
 4. Populate content:
-   Run the script `sh ./scripts/populate-content.sh` or copy [these files](https://gist.github.com/yoanmalie/0ddcd9b8ba131e1605ef58adfa2c484a) to create the site.txt with the homepage and the error page.
+
+Run the script `sh ./scripts/populate-content.sh` or copy [these files](https://gist.github.com/yoanmalie/0ddcd9b8ba131e1605ef58adfa2c484a) to create the site.txt with the homepage and the error page.
 
 5. Create necessary assets files for the project:
 
@@ -77,17 +78,15 @@ If you want to build for a production environment, use the `--production` flag w
 
 Browsersync open Google Chrome by default, you can use Firefox instead by using the `--firefox` flag when you run the `gulp sync` task or the `gulp serve` one.
 
-## Plugins installation
+## Kirby core and plugins
+
+The `/plugins` folder is not versioned, if you need to commit a custom plugin add it to the `.gitignore` file with a leading `!`: `!/site/plugins/my-plugin/`
 
 To install a plugin:
 
 ```bash
 composer require yoanmalie/kirbytextwrap
 ```
-
-## Kirby core and plugins
-
-The `/plugins` folder is not versioned, if you need to commit a custom plugin add it to the .gitignore file with a leading `!`: `!/site/plugins/my-plugin/`
 
 To update Kirby itself:
 
