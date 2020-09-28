@@ -1,3 +1,3 @@
-    <?= js('assets/js/app.js') ?>
+    <?= js('assets/js/app.js'); ?>
   </body>
 </html>
