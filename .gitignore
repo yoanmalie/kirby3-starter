@@ -9,6 +9,9 @@ site/config/*
 !site/config/config.localhost.php
 !site/config/config.example.vhost.php
 
+# Don't ignore custom plugins
+!site/plugins/custom-*
+
 # Generated assets folder
 public/assets/*
 
