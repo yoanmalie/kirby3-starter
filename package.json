@@ -6,12 +6,12 @@
   "license": "LGPL-3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier": "prettier --write \"**/*.{php,js,scss,md,json}\"",
+    "prettier": "prettier --write \"**/*.{js,scss,md,json}\"",
     "stylelint": "stylelint \"**/*.scss\" --fix",
-    "eslint": "eslint \"**/*.js\""
+    "eslint": "eslint \"**/*.js\"",
+    "phpcsfixer": "./vendor/bin/php-cs-fixer --config=.php_cs.dist fix"
   },
   "devDependencies": {
-    "@prettier/plugin-php": "^0.14.3",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
@@ -82,7 +82,10 @@
     }
   },
   "lint-staged": {
-    "*.{php,scss,md,json}": [
+    "*.php": [
+      "./vendor/bin/php-cs-fixer --config=.php_cs.dist fix"
+    ],
+    "*.{scss,md,json}": [
       "prettier --write"
     ],
     "*.scss": [

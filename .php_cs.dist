@@ -1,0 +1,30 @@
+<?php
+
+$exclude = [
+  'kirby',
+  'content',
+  'storage',
+  'site/blueprints',
+  'site/plugins',
+  'src',
+  'public',
+  'gulp_tasks',
+  'node_modules',
+  'scripts',
+];
+
+$finder = PhpCsFixer\Finder::create()
+  ->in(__DIR__)
+  ->exclude($exclude)
+;
+
+return PhpCsFixer\Config::create()
+  ->setIndent('  ')
+  ->setRules([
+    '@Symfony' => true,
+    'concat_space' => [
+      'spacing' => 'one',
+    ],
+  ])
+  ->setFinder($finder)
+;

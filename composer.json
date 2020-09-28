@@ -12,6 +12,7 @@
   ],
   "license": "LGPL-3.0",
   "require": {
+    "friendsofphp/php-cs-fixer": "^2.16",
     "getkirby/cms": "^3.0.0"
   },
   "config": {

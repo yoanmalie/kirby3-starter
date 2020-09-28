@@ -28,6 +28,10 @@ vendor/*
 node_modules/*
 npm-debug.log
 
+# Php-cs-fixer
+.php_cs
+.php_cs.cache
+
 # Editors and IDEs
 .idea
 .vscode
